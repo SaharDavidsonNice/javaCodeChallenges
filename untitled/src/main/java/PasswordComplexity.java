@@ -13,10 +13,10 @@ public class PasswordComplexity {
 
     }
 
-    private static boolean PasswordComplex(String password) {
+    static boolean PasswordComplex(String password) {
         return password.length() <= 6 &&
                 password.matches(".*\\d.*") &&
-                password.matches(".*[a-z]].*") &&
+                password.matches(".*[a-z].*") &&
                 password.matches(".*[A-Z].*") ;
     }
 
